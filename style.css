@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f3f3f3;
+}
+header,
+.quiz-bottom {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  background-color: #fff;
+  padding: 10px 14px;
+  flex-wrap: wrap;
+}
+header {
+  margin-bottom: 10px;
+}
+.categori-container,
+.questions-count-container {
+  font-weight: bold;
+}
+.categori,
+.questions-count {
+  color: #2a76ff;
+}
+.content {
+  padding: 10px;
+  background-color: #fff;
+}
+.question-title {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.questions-answers-container {
+  background-color: #f3f3f3;
+}
+.question-answer-container {
+  padding: 11px 21px;
+  font-size: 20px;
+}
+.question-answer-container input:checked + label {
+  color: #2a76ff;
+}
+.question-answer-container input {
+  margin-right: 3px;
+  cursor: pointer;
+}
+.question-answer-container label {
+  cursor: pointer;
+  font-weight: 600;
+  color: #717171;
+  font-size: 17px;
+}
+.question-answer-container:not(:last-child) {
+  border-bottom: 1px solid #c5c5c5;
+}
+#submit-answer {
+  color: #fff;
+  background-color: #2a76ff;
+  outline: none;
+  width: 100%;
+  border: 0;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 10px;
+  cursor: pointer;
+}
+#submit-answer:hover {
+  opacity: 0.9;
+}
+.quiz-bottom {
+  margin-top: 10px;
+}
+.bullets-container {
+  list-style-type: none;
+}
+.bullet {
+  width: 20px;
+  margin-right: 2px;
+  display: inline-block;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: #c5c5c5;
+}
+.bullet.active {
+  background-color: #2a76ff;
+}
+.perfect {
+  color: #2a76ff;
+}
+.good {
+  color: green;
+}
+.bad {
+  color: crimson;
+}
+.result {
+  background-color: #f3f3f3;
+  padding: 10px;
+  text-align: center;
+}
+.result span {
+  display: block;
+  margin-bottom: 4px;
+}
